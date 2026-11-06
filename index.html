@@ -3,12 +3,388 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>ARHC Voetbaltoernooi 2026</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0f1f3d, #1c3a6e);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.8em;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0 0 30px 0;
+      font-size: 1.2em;
+      color: #cbd5e1;
+    }
+    nav {
+      background-color: white;
+      text-align: center;
+      padding: 16px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #0f1f3d;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: 600;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      color: #d4a017;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    section {
+      background-color: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: #0f1f3d;
+      margin-top: 0;
+      font-size: 1.5em;
+      border-left: 4px solid #d4a017;
+      padding-left: 12px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: #1c3a6e;
+    }
+    .knop {
+      display: inline-block;
+      background-color: #d4a017;
+      color: #0f1f3d;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    .knop:hover {
+      background-color: #e8b62a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95em;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background-color: #0f1f3d;
+      color: white;
+      font-weight: 600;
+    }
+    tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+    form label {
+      display: block;
+      margin-top: 16px;
+      font-weight: 600;
+      color: #0f1f3d;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1em;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #1c3a6e;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #0f1f3d;
+      color: #cbd5e1;
+    }
+    td input {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95em;
+      background-color: white;
+    }
+    td input[type="number"] {
+      width: 70px;
+    }
+    td input:focus {
+      outline: none;
+      border-color: #1c3a6e;
+    }
+  </style>
 </head>
 <body>
-  <h1>Schoolvoetbaltoernooi ARHC</h1>
-   <h2>Deze website geeft je alle informatie die je nodig hebt over dit fantastische schoolvoetbaltoernooi!!.</h2>
-  <script src="script.js"></script>
+ 
+  <header id="home">
+    <h1>⚽ ARHC Voetbaltoernooi 2026!</h1>
+    <p>Vrijdag 12 juni 2026, Sporthal</p>
+    <a href="#aanmelden" class="knop">Schrijf je team in</a>
+  </header>
+ 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#info">Info</a>
+    <a href="#schema">Schema</a>
+    <a href="#teams">Teams</a>
+    <a href="#aanmelden">Aanmelden</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+ 
+  <main>
+ 
+    <section>
+      <h2>Wat is het?</h2>
+      <p>De 4de klassen strijden tegen elkaar in een sportief en gezellig voetbaltoernooi.
+         De winnende klas gaat naar huis met de beker! 🏆</p>
+    </section>
+ 
+    <section id="info">
+      <h2>Praktische info</h2>
+      <ul>
+        <li><strong>Locatie:</strong> Sporthal</li>
+        <li><strong>Tijd:</strong> 9:00 tot 12:30 uur</li>
+        <li><strong>Wie doen er mee:</strong> alleen de 4de klas</li>
+        <li><strong>Meenemen:</strong> sportkleding en sportschoenen</li>
+      </ul>
+    </section>
+ 
+    <section id="schema">
+      <h2>Speelschema</h2>
+      <p>Elke wedstrijd duurt 20 minuten. Vul de teams in zodra de inschrijving gesloten is.</p>
+      <table>
+        <tr>
+          <th>Tijd</th>
+          <th>Team 1</th>
+          <th>Team 2</th>
+          <th>Uitslag</th>
+        </tr>
+        <tr>
+          <td>9:00 tot 9:20</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>9:20 tot 9:40</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>9:40 tot 10:00</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>10:00 tot 10:20</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>10:20 tot 10:40</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>10:40 tot 11:00</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>11:00 tot 11:20</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>11:20 tot 11:40</td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+        <tr>
+          <td>12:00 tot 12:20</td>
+          <td><input type="text" placeholder="Winnaar"></td>
+          <td>Docententeam</td>
+          <td><input type="text" placeholder="0 tegen 0"></td>
+        </tr>
+      </table>
+    </section>
+ 
+    <section id="teams">
+      <h2>Poulestand</h2>
+      <p>Vul de stand in tijdens het toernooi.</p>
+      <table>
+        <tr>
+          <th>Team</th>
+          <th>Gespeeld</th>
+          <th>Gewonnen</th>
+          <th>Gelijk</th>
+          <th>Verloren</th>
+          <th>Punten</th>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Team"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+          <td><input type="number" min="0" value="0"></td>
+        </tr>
+      </table>
+    </section>
+ 
+    <section>
+      <h2>Spelregels</h2>
+      <ul>
+        <li>Een wedstrijd duurt 20 minuten.</li>
+        <li>5 spelers in het veld, onbeperkt wisselen.</li>
+        <li>Teams zijn verplicht gemengd.</li>
+        <li>Gelijkspel? Dan volgen penalty's.</li>
+      </ul>
+    </section>
+ 
+    <section>
+      <h2>Docententeam</h2>
+      <p>De winnende klas speelt in de finale tegen het docententeam. Wie is er beter? 😄</p>
+    </section>
+ 
+    <section id="aanmelden">
+      <h2>Schrijf je team in</h2>
+      <form>
+        <label for="teamnaam">Teamnaam</label>
+        <input type="text" id="teamnaam" name="teamnaam">
+ 
+        <label for="klas">Klas</label>
+        <input type="text" id="klas" name="klas">
+ 
+        <label for="aanvoerder">Aanvoerder</label>
+        <input type="text" id="aanvoerder" name="aanvoerder">
+ 
+        <label for="spelers">Namen van de spelers</label>
+        <textarea id="spelers" name="spelers" rows="4"></textarea>
+ 
+        <br><br>
+        <button type="submit" class="knop">Schrijf je team in</button>
+      </form>
+    </section>
+ 
+    <section>
+      <h2>Supporters</h2>
+      <p>Speel je niet mee? Kom kijken en moedig je klas aan! De kantine is de hele dag open.</p>
+    </section>
+ 
+    <section id="faq">
+      <h2>Veelgestelde vragen</h2>
+      <p><strong>Moet ik meedoen als ik niet kan voetballen?</strong><br>
+         Nee, je mag ook komen supporten.</p>
+      <p><strong>Wat als het regent?</strong><br>
+         Geen probleem, we spelen binnen in de sporthal.</p>
+      <p><strong>Krijg ik lesuitval?</strong><br>
+         Ja, op de dag van het toernooi zijn er geen lessen.</p>
+    </section>
+ 
+    <section>
+      <h2>Contact</h2>
+      <p>Vragen? Mail naar de organiserende docent:
+         <a href="mailto:benksmit@gmail.com">benksmit@gmail.com</a></p>
+    </section>
+ 
+  </main>
+ 
+  <footer>
+    <p>ARHC Voetbaltoernooi 2026</p>
+  </footer>
+ 
 </body>
 </html>
