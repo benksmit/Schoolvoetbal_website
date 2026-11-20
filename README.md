@@ -364,4 +364,18 @@ Geen websitebestanden gewijzigd.
 h
 
 </details>
+
+<details>
+<summary>20-11-2026 13:33:48 (UTC+01:00) | Opslaan | benksmit | 1 gewijzigde bestanden (+1/−1)</summary>
+
+- **Uitgevoerd door:** benksmit
+- **Branch:** main
+- **Websitebestanden na deze actie:** 3
+- **Vorige opgeslagen versie:** [10149441852ed908b279278a018e9199dfd42d50](https://github.com/benksmit/Schoolvoetbal_website/commit/10149441852ed908b279278a018e9199dfd42d50)
+
+| Bestand | Wijziging | Toegevoegd | Verwijderd |
+| --- | --- | ---: | ---: |
+| index.html | Aangepast | 1 | 1 |
+
+</details>
 <!-- arhc-weblab:log:end -->
