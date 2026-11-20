@@ -334,4 +334,18 @@ Geen websitebestanden gewijzigd.
 dehde
 
 </details>
+
+<details>
+<summary>20-11-2026 13:31:08 (UTC+01:00) | Opslaan | benksmit | 1 gewijzigde bestanden (+1/−1)</summary>
+
+- **Uitgevoerd door:** benksmit
+- **Branch:** main
+- **Websitebestanden na deze actie:** 3
+- **Vorige opgeslagen versie:** [678d4caf1731d1c9626ed7fe335cb0f1d3c869e4](https://github.com/benksmit/Schoolvoetbal_website/commit/678d4caf1731d1c9626ed7fe335cb0f1d3c869e4)
+
+| Bestand | Wijziging | Toegevoegd | Verwijderd |
+| --- | --- | ---: | ---: |
+| index.html | Aangepast | 1 | 1 |
+
+</details>
 <!-- arhc-weblab:log:end -->
